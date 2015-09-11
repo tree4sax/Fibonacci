@@ -1,5 +1,6 @@
 // write a function that takes a value and returns the
 // next Fibonacci value
+// edited version ***
 
 function fibNumber(index) {
 //  if (index == 0 || index == 1) {
