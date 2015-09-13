@@ -18,13 +18,13 @@
       fibNum = fibArray[fibArrayNum - 1] + fibArray[fibArrayNum];
       fibArrayNum += 1;
 
-
     }
 
-    return fibArray;
+    fibArray.push(fibNum);
+    return fibNum;
 }
 
-console.log(fibNumber(5));
+console.log(fibNumber(13));
 
 var assert = require('assert');
 
