@@ -3,21 +3,28 @@
 // edited version ***
 
     var fibNum = 1;
-    var fibArrayNum = 1;
     var fibArray = [0];
+    var fibArrayNum = 1;
 
-    for (i = 0; i < index; i++) {
+    for (i = 0; i <= index; i++) {
 
       fibArray.push(fibNum);
+
+      if (fibNum > index){
+        return fibNum;
+        break;
+      }
+
       fibNum = fibArray[fibArrayNum - 1] + fibArray[fibArrayNum];
       fibArrayNum += 1;
+
 
     }
 
     return fibArray;
 }
 
-console.log(fibNumber(8));
+console.log(fibNumber(5));
 
 var assert = require('assert');
 
